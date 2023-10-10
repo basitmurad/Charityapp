@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Charity app</string>
+    <!--    <string name="text1">You have two hands one to help yourself, the second to help others.</string>-->
+    <!--    <string name="text2">If you cant feed a hundred people,then just feed one.</string>-->
+    <!--    <string name="text3">Giving is not just about making a donation, it is about making a difference.</string>-->
+    <!--    <string name="text4">Be the change you want tosee in this world</string>-->
+    <string name="text1">You have two hands\n one to help yourself,\n the second to help others.</string>
+    <string name="text2">If you cant feed a hundred people,\nthen just feed one.</string>
+    <string name="text3">Giving is not just about\n making a donation, it is about \nmaking a difference</string>
+    <string name="text4">Be the change you want to \nsee in this world</string>
+</resources>
