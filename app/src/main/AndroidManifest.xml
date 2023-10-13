@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -11,22 +11,40 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CharityApp"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NgoRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NgoDonationsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NgoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ConfirmDonationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.AvailableDonationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.YourDonationsActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.NewDonationsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.NewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.ResturantsLoginActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.ResturantsLoginActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.RegistrationsActivity"
             android:exported="false" />
@@ -35,8 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.SplashActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
