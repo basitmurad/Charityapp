@@ -39,7 +39,7 @@
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView6"
+        android:id="@+id/btnMakeDonations"
         android:layout_width="0dp"
 
 
@@ -82,9 +82,9 @@
         android:layout_marginTop="16dp"
         app:cardCornerRadius="20dp"
 
-        app:layout_constraintEnd_toEndOf="@+id/cardView6"
-        app:layout_constraintStart_toStartOf="@+id/cardView6"
-        app:layout_constraintTop_toBottomOf="@+id/cardView6">
+        app:layout_constraintEnd_toEndOf="@+id/btnMakeDonations"
+        app:layout_constraintStart_toStartOf="@+id/btnMakeDonations"
+        app:layout_constraintTop_toBottomOf="@+id/btnMakeDonations">
 
         <TextView
             android:layout_width="match_parent"

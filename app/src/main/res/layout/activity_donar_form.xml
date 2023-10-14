@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.DonarFormActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/donar_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/donar_back"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_medium"
+
+                android:text="Noble Share Walfare"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+
+
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/baseline_view_headline_24"
+                app:layout_constraintBottom_toBottomOf="@+id/textView14"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView14" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+
+           android:layout_margin="8dp"
+                android:text="Donar Form"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/donar_back"
+                        android:id="@+id/edittextUserName"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:padding="5dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/donar_back"
+                        android:id="@+id/edittextEmail"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:padding="5dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/donar_back"
+                        android:id="@+id/edittextPassword"
+                        android:layout_marginStart="8dp"
+                        android:padding="5dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="8dp"
+
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="CNIC/Passport/NICOP"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/donar_back"
+                        android:id="@+id/edittextNic"
+                        android:padding="5dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="8dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/donar_back"
+                        android:id="@+id/edittextCountry"
+                        android:padding="5dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="8dp"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="City"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/donar_back"
+                        android:id="@+id/edittextCity"
+                        android:layout_marginStart="8dp"
+                        android:padding="5dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="8dp"
+
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/donar_back"
+                        android:id="@+id/edittextAddress"
+                        android:layout_marginStart="8dp"
+                        android:padding="5dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginEnd="8dp"
+
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Contact/Mobile Number"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/donar_back"
+
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Country Code"
+
+
+                            android:padding="5dp"
+
+                            />
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:background="@drawable/donar_back_code"/>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Profile Picture"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="4dp"
+                        />
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/donar_back"
+                        android:layout_margin="8dp"
+
+
+                        >
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:padding="3dp"
+                            android:textColor="@color/black"
+                            android:backgroundTint="#77CFC9C9"
+
+                            android:text="Choose File"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="@drawable/donar_back_code"
+                            android:padding="4dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/textView13"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/textView13"
+                            app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="Submit"
+                        android:id="@+id/btnSubmit"
+                        android:padding="8dp"
+                        android:layout_margin="8dp"
+
+                        android:background="@drawable/submit_back"
+                        />
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

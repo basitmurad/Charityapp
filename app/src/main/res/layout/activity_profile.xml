@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color2"
     tools:context=".ui.ProfileActivity">
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="ma
-"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="16dp"
 
         android:fontFamily="@font/poppins_semibold"
         android:text="Profile"
@@ -25,14 +25,14 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
 
 
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:src="@drawable/plus"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -41,7 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
 
         android:fontFamily="@font/poppins_medium"
@@ -50,6 +50,7 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -58,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="24dp"
         android:fontFamily="@font/poppins_medium"
 
@@ -74,17 +75,22 @@
         android:id="@+id/constraintLayout3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10">
 
         <FrameLayout
             android:id="@+id/frameLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
             android:background="@drawable/profile_back"
+            android:backgroundTint="@color/color4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
@@ -100,27 +106,28 @@
         </FrameLayout>
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textViewProfile"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:paddingStart="28dp"
             android:text="Edit Profile"
-            android:textAlignment="center"
+            android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintEnd_toStartOf="@+id/btnEditProfile"
             app:layout_constraintStart_toEndOf="@+id/frameLayout"
             app:layout_constraintTop_toTopOf="@+id/frameLayout" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/btnEditProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:src="@drawable/baseline_arrow_forward_ios_24"
-            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewProfile"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView11" />
+            app:layout_constraintTop_toTopOf="@+id/textViewProfile" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -128,42 +135,48 @@
         android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout3"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
 
         <FrameLayout
-            android:id="@+id/frameLayout"
+            android:id="@+id/frameLayout2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
             android:background="@drawable/profile_back"
+            android:backgroundTint="@color/color4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/btnProfile"
+                android:id="@+id/btnAbout"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="8dp"
-                android:src="@drawable/profile"
+                android:src="@drawable/about"
 
                 />
         </FrameLayout>
 
         <TextView
-            android:id="@+id/textView11"
+            android:id="@+id/textViewAbout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Edit Profile"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
+            android:paddingStart="28dp"
+            android:text="About"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
             app:layout_constraintEnd_toStartOf="@+id/imageView4"
-            app:layout_constraintStart_toEndOf="@+id/frameLayout"
-            app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+            app:layout_constraintStart_toEndOf="@+id/frameLayout2"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout2" />
 
         <ImageView
             android:id="@+id/imageView4"
@@ -172,37 +185,44 @@
             android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:src="@drawable/baseline_arrow_forward_ios_24"
-            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewAbout"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView11" />
+            app:layout_constraintTop_toTopOf="@+id/textViewAbout" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+
+
         android:id="@+id/constraintLayout4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
         <FrameLayout
-            android:id="@+id/frameLayout"
+            android:id="@+id/frameLayout3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
             android:background="@drawable/profile_back"
+            android:backgroundTint="@color/color4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/btnProfile"
+                android:id="@+id/Setting"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="8dp"
-                android:src="@drawable/profile"
+                android:src="@drawable/setting"
 
                 />
         </FrameLayout>
@@ -212,15 +232,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Edit Profile"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-            app:layout_constraintEnd_toStartOf="@+id/imageView4"
-            app:layout_constraintStart_toEndOf="@+id/frameLayout"
-            app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+            android:paddingStart="28dp"
+
+            android:text="Setting"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout3"
+            app:layout_constraintEnd_toStartOf="@+id/btnSetting"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout3"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout3" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/btnSetting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
@@ -236,54 +258,156 @@
         android:id="@+id/constraintLayout5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout4"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout4"
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout4">
 
         <FrameLayout
-            android:id="@+id/frameLayout"
+            android:id="@+id/frameLayout4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:layout_weight="1"
             android:background="@drawable/profile_back"
+            android:backgroundTint="@color/color4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:id="@+id/btnProfile"
+                android:id="@+id/policy"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:padding="8dp"
-                android:src="@drawable/profile"
+                android:src="@drawable/policy"
 
                 />
         </FrameLayout>
 
         <TextView
-            android:id="@+id/textView11"
+
+            android:id="@+id/textView12"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Edit Profile"
-            android:textAlignment="center"
-            app:layout_constraintBottom_toBottomOf="@+id/frameLayout"
-            app:layout_constraintEnd_toStartOf="@+id/imageView4"
-            app:layout_constraintStart_toEndOf="@+id/frameLayout"
-            app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+            android:paddingStart="28dp"
+            android:text="Terms &amp; Privacy Policy"
+
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout4"
+            app:layout_constraintEnd_toStartOf="@+id/btnPolicy"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout4"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout4" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/btnPolicy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="32dp"
             android:layout_weight="1"
             android:src="@drawable/baseline_arrow_forward_ios_24"
-            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintBottom_toBottomOf="@+id/textView12"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView11" />
+            app:layout_constraintTop_toTopOf="@+id/textView12" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout5"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout5"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+
+        <FrameLayout
+            android:id="@+id/frameLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/profile_back"
+            android:backgroundTint="@color/color4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/logout"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="8dp"
+                android:src="@drawable/logout"
+
+                />
+        </FrameLayout>
+
+        <TextView
+
+            android:id="@+id/textView123"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="28dp"
+            android:text="Log Out"
+
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayout5"
+            app:layout_constraintEnd_toStartOf="@+id/btnLagout"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout5"
+            app:layout_constraintTop_toTopOf="@+id/frameLayout5" />
+
+        <ImageView
+            android:id="@+id/btnLagout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            app:layout_constraintBottom_toBottomOf="@+id/textView123"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView123" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/share" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Share App"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

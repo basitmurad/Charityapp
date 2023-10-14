@@ -26,10 +26,11 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="350dp"
-        android:layout_height="350dp"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
 
         android:layout_marginTop="44dp"
+        android:scaleType="fitXY"
         android:src="@drawable/ngo"
         app:layout_constraintEnd_toEndOf="@+id/textView7"
         app:layout_constraintHorizontal_bias="0.221"
@@ -37,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView3"
+        android:id="@+id/btnDonationRequest"
         android:layout_width="0dp"
 
 
@@ -54,6 +55,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+
 
             android:background="@drawable/back_stroke"
             android:fontFamily="@font/poppins_medium"
@@ -79,9 +81,9 @@
         android:layout_marginTop="16dp"
 
         app:cardCornerRadius="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/cardView3"
-        app:layout_constraintStart_toStartOf="@+id/cardView3"
-        app:layout_constraintTop_toBottomOf="@+id/cardView3">
+        app:layout_constraintEnd_toEndOf="@+id/btnDonationRequest"
+        app:layout_constraintStart_toStartOf="@+id/btnDonationRequest"
+        app:layout_constraintTop_toBottomOf="@+id/btnDonationRequest">
 
         <TextView
             android:layout_width="match_parent"
@@ -93,7 +95,7 @@
             android:paddingTop="8dp"
             android:paddingEnd="28dp"
             android:paddingBottom="8dp"
-            android:text=" Donations request "
+            android:text=" Request History "
             android:textAlignment="center"
             android:textSize="16sp"
 
