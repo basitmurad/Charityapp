@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+android:background="@color/color4"
     tools:context=".ui.DonarFormActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -251,12 +251,17 @@
                             android:padding="5dp"
 
                             />
-                        <EditText
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/countryCodePicker"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:padding="4dp"
-                            android:background="@drawable/donar_back_code"/>
+                            android:layout_height="wrap_content" />
+
+<!--                        <EditText-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="1"-->
+<!--                            android:padding="4dp"-->
+<!--                            android:background="@drawable/donar_back_code"/>-->
 
                     </LinearLayout>
 

@@ -56,6 +56,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
+            android:inputType="number"
+            android:maxLines="1"
             android:background="@drawable/rectangle"
             android:backgroundTint="@color/white"
             android:fontFamily="@font/poppins"
@@ -85,11 +87,11 @@
            <RadioButton
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="Restaurant"
+               android:text="Donar"
                android:layout_marginStart="16dp"
                android:textColor="#4A4C4C"
                android:layout_marginBottom="16dp"
-               android:id="@+id/btnResturant"
+               android:id="@+id/btnDonar"
 
                />
        </RadioGroup>
